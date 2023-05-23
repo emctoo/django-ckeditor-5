@@ -40,6 +40,7 @@ INSTALLED_APPS = [
     "django.contrib.messages",
     "django.contrib.staticfiles",
     "django_ckeditor_5",
+
     "articles",
 ]
 
@@ -136,7 +137,7 @@ customColorPalette = [
 CKEDITOR_5_CONFIGS = {
     "default": {
         "removePlugins": [
-            "Markdown"
+            # "Markdown"
         ],  # Add this if you want to use SourceEditing for HTML.
         "toolbar": [
             "heading",
@@ -150,7 +151,7 @@ CKEDITOR_5_CONFIGS = {
         ],
     },
     "comment": {
-        "language": {"ui": "en", "content": "ar"},
+        "language": {"ui": "en", "content": "en"},
         "toolbar": [
             "heading",
             "|",
@@ -163,7 +164,7 @@ CKEDITOR_5_CONFIGS = {
         ],
     },
     "extends": {
-        "language": "ru",
+        "language": "en",
         "blockToolbar": [
             "paragraph",
             "heading1",
